@@ -1,0 +1,18 @@
+Alpen-Messstationen als App (PWA) installieren
+==============================================
+
+Die App braucht eine HTTPS-Adresse. Am einfachsten mit GitHub Pages (kostenlos):
+
+1. Auf github.com ein neues Repository anlegen (z. B. "alpen-dashboard"), Sichtbarkeit nach Wunsch.
+2. "Add file > Upload files": ALLE Dateien aus diesem Ordner hochladen
+   (index.html, manifest.webmanifest, sw.js, die drei icon-*.png) und committen.
+3. Repository > Settings > Pages > "Deploy from a branch" > Branch "main", Ordner "/ (root)" > Save.
+4. Nach ca. 1 Minute ist die App unter https://<benutzername>.github.io/alpen-dashboard/ erreichbar.
+5. Diese Adresse am Android-Handy in Chrome öffnen > Menü (drei Punkte) > "App installieren"
+   (bzw. "Zum Startbildschirm hinzufügen"). Danach startet sie wie eine normale App ohne Browserleiste.
+
+Hinweise
+- Favoriten und Region-Auswahl werden im Browserspeicher der installierten App gespeichert.
+- Messdaten werden bei jedem Start live geladen (und alle 30 Minuten aktualisiert); ohne Internet
+  startet die App, zeigt aber Demodaten.
+- Echte APK-Datei: die GitHub-Pages-Adresse auf pwabuilder.com eingeben und "Android" wählen.
